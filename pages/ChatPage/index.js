@@ -22,6 +22,9 @@ const ChatPage = ({}) => {
     const [welcome, setWelcome] = useState("Welcome to my App!");
     const [msg,setMsg] = useState("Please type something!");
     const [resp,setResp] = useState("Let me respond to you!!");
+    const [color,setColor] = useState("#fad");
+    const [text,setText] = useState("Reset");
+
    
    return <div>
 
@@ -59,8 +62,23 @@ msg={resp}/>
     //      setResp("I love pie");
     //  }
 
-
  }}/>
+    </div>
+
+
+    <div id="custom_button">
+    <CustomButton 
+    color={color}
+    text={text}
+    onClick={(val)=>{
+        setColor("#5ff");
+        setText("Done!");
+    }}
+    />
+
+
+        {/* When the button is clicked, setColor to another color, and 
+        setText to another text  */}
     </div>
 </div>
 }
