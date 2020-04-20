@@ -29,7 +29,7 @@ const ChatPage = ({}) => {
 setTimeout(() =>{
 
     document.querySelector("#chatpage").style.left = 0;
-   },100);
+   },50);
    }, []);
 
    return <div id="chatpage">
