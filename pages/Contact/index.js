@@ -1,15 +1,15 @@
-
+import {useEffect} from 'react';
 import CustomButton from '../../comps/CustomButton';
 import Header from '../../comps/Header';
 import './contact.css';
-import { useEffect } from 'react';
+
 
 
 const Contact = () => {
 
     useEffect(() => {
         setTimeout(()=>{
-            document.querySelector("#chatpage").style.left =0;  
+            document.querySelector("#contactpage").style.left =0;  
     },50);
 },[]);
 
