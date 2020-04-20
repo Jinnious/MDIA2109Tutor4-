@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Router from 'next/router';
 import {FaUserSecret} from 'react-icons/fa';
 import {TiUserAddOutline} from 'react-icons/ti';
+import './index.css';
 
 
 
