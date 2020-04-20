@@ -1,16 +1,30 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './input.css';
 import CustomButton from '../CustomButton';
 
-const Input = ({placeholder}) => <div className="input_cont">
-<input type ='text' placeholder={placeholder} />
-<CustomButton text="send" color="#58F"/>
+const Input = ({placeholder, onClick}) => {
+    const [val,setVal] = useState("");
+    
 
-</div>
+return <div className="input_cont">
+<input onChange={(e)=>{
+    setVal(e.target.value);
+}}
+    type ='text' placeholder={placeholder} />
+<CustomButton onClick={()=>{
+    //alert(val);
+    onClick(val);
+}}
+text="send" color="#58F"/>
+
+</div>;
+
+}
 
 Input.defaultProps = {
 
-    placeholder:"Type your chat here!"
+    placeholder:"Type your chat here!",
+    onClick:()=>{}
 
 }
 export default Input;

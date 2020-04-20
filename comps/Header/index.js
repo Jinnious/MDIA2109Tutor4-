@@ -11,7 +11,7 @@ const Header = ({text,fontSize, color ,onMouseOver})=> <div>
 {/* (style={{ fontSize: fontSize,color:color}}
 onMouseOver={onMouseOver}) */}
     
-    <h1>{text}</h1>
+    <h1 style={{fontSize:fontSize}}>{text}</h1>
 </div>
 
 function MouseOver() {
@@ -20,7 +20,7 @@ function MouseOver() {
 }
 
 Header.defaultProps = {
-    fontSize:30,
+    fontSize:20,
     color:"#dad",
     onMouseOver:MouseOver,
     text:"Header"
