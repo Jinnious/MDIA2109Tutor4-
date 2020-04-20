@@ -15,7 +15,7 @@ onClick={onClick}>
 
 function ButtonClick() {
     alert("Clicked");
-    
+   
 }
 CustomButton.defaultProps ={
     text:"Default Button",

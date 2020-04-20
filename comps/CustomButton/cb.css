@@ -12,9 +12,10 @@
 .custom_button_box:active 
 
 {
-    color:#df3;
-    background-color:  #000;
+    color : #ffffff;
+    background-color:#ffff;
     border:2px solid #df3;
+
 }
 
 .custom_button_box_inner::selection {
