@@ -9,7 +9,7 @@
     "build-storybook": "build-storybook",
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p $PORT"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,8 @@
     "next-images": "^1.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-icons": "^3.9.0"
+    "react-icons": "^3.9.0",
+    "webpack": "^4.43.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -36,5 +37,11 @@
     "@storybook/addons": "^5.3.18",
     "@storybook/react": "^5.3.18",
     "babel-loader": "^8.1.0"
-  }
+  },
+
+  "engines": { "node": "12.16.1" }
 }
+
+
+
+
